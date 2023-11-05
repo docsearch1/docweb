@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+import 'package:get/get_state_manager/src/rx_flutter/rx_notifier.dart';
 import 'package:myapp/lab/lab_display_page.dart';
 import 'package:myapp/medical_shop_page.dart';
 import 'package:myapp/utils.dart';
@@ -52,6 +54,31 @@ class _SearchLabState extends State<SearchLab> {
                   ),
                 ),
               ),
+            ),
+
+            SizedBox(
+              height: 10,
+            ),
+            ImageSlideshow(
+              height: 1000,
+              indicatorColor: Colors.blue,
+              onPageChanged: (value){
+                debugPrint('PageChanged:$Value');
+
+              },
+              autoPlayInterval: 3000,
+              isLoop: true,
+              children: [
+                Image(image: NetworkImage('https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                  fit: BoxFit.cover,
+                ),
+                Image(image: NetworkImage('https://images.pexels.com/photos/3259629/pexels-photo-3259629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                  fit: BoxFit.cover,
+                ),
+                Image(image: NetworkImage('https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                  fit: BoxFit.cover,
+                ),
+              ],
             ),
             SizedBox(
               height: 50,

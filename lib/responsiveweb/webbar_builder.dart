@@ -185,14 +185,11 @@ class SlidingWebPage extends StatelessWidget {
                           color: Color(0xffffffff),
                         ),
                       ),
-                      Container(
-                        width: 80 * fem,
-                        height: 48 * fem,
-                        color: Color(0xff000000),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            TextButton(
+                      Row(
+                        children: [
+                          Material(
+                            color: Colors.blue,
+                            child: TextButton(
                               onPressed: () async{
                                 await showDialog<void>(
                                 context: context,
@@ -285,7 +282,7 @@ class SlidingWebPage extends StatelessWidget {
                                         ),
                                         child: const Text('Get Otp'),
                                         onPressed: () {
-
+                            
                                         },
                                       ),
                                     ),
@@ -295,7 +292,7 @@ class SlidingWebPage extends StatelessWidget {
                                 child: SizedBox(
                                   width: 500,
                                   child: ElevatedButton(
-
+                            
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.red, // Background color
                                        // Text color
@@ -327,17 +324,21 @@ class SlidingWebPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Text(
-                              "/",
-                              style: SafeGoogleFont(
-                                'Inter',
-                                fontSize: 17 * ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.17* ffem / fem,
-                                color: Color(0xffffffff),
-                              ),
+                          ),
+                          Text(
+                            "/",
+                            style: SafeGoogleFont(
+                              'Inter',
+                              fontSize: 17 * ffem,
+                              fontWeight: FontWeight.w400,
+                              height: 1.17* ffem / fem,
+                              color: Color(0xffffffff),
                             ),
-                            TextButton(
+                          ),
+                          Material(
+                            color: Colors.blue,
+                            child: TextButton(
+
                               onPressed: () async{
                                 await showDialog<void>(
                                 context: context,
@@ -427,8 +428,8 @@ class SlidingWebPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

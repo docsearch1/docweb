@@ -515,284 +515,285 @@ class HomePage extends StatelessWidget {
                                 const SizedBox(
                                   height: 10,
                                 ),
-                                //           ImageSlideshow(
-                                //   indicatorColor: Colors.blue,
-                                //   onPageChanged: (value){
-                                //     debugPrint('PageChanged:$Value');
+                                          ImageSlideshow(
+                                  height: 500,
+                                  indicatorColor: Colors.blue,
+                                  onPageChanged: (value){
+                                    debugPrint('PageChanged:$Value');
 
-                                //   },
-                                //   autoPlayInterval: 3000,
-                                //   isLoop: true,
-                                //   children: [
-                                //     Image(image: NetworkImage('https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-                                //     fit: BoxFit.cover,
-                                //     ),
-                                //     Image(image: NetworkImage('https://images.pexels.com/photos/3259629/pexels-photo-3259629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-                                //       fit: BoxFit.cover,
-                                //     ),
-                                //     Image(image: NetworkImage('https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-                                //       fit: BoxFit.cover,
-                                //     ),
-                                //   ],
-                                // ),
-                                Expanded(
-                                  child: Container(
-                                    // autogroup977vf2p (3Yb4ejm91xVKXk544z977V)
-                                    width: double.infinity,
-                                    height: 586.8 * fem,
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          // vectorD4L (16:32)
-                                          left: 1375 * fem,
-                                          top: 130 * fem,
-                                          child: Align(
-                                            child: SizedBox(
-                                              width: 22.8 * fem,
-                                              height: 40 * fem,
-                                              child: Image.asset(
-                                                'assets/page-1/images/vector-Ho6.png',
-                                                width: 22.8 * fem,
-                                                height: 40 * fem,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Positioned(
-                                          // group2428Xap (21:196)
-                                          left: 0 * fem,
-                                          top: 0 * fem,
-                                          child: Container(
-                                            width: 1440 * fem,
-                                            height: 586.8 * fem,
-                                            child: Stack(
-                                              children: [
-                                                Positioned(
-                                                  // rectangle173evL (16:21)
-                                                  left: 0 * fem,
-                                                  top: 0 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 1440 * fem,
-                                                      height: 586 * fem,
-                                                      child: Container(
-                                                        decoration:
-                                                            const BoxDecoration(
-                                                          color:
-                                                              Color(0xffecf9fb),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  // weareprovidingthebesthealthser (16:22)
-                                                  left: 68 * fem,
-                                                  top: 118 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 569 * fem,
-                                                      height: 134 * fem,
-                                                      child: RichText(
-                                                        text: TextSpan(
-                                                          style: SafeGoogleFont(
-                                                            'Inter',
-                                                            fontSize: 55 * ffem,
-                                                            fontWeight:
-                                                                FontWeight.w700,
-                                                            height: 1.2125 *
-                                                                ffem /
-                                                                fem,
-                                                            color: const Color(
-                                                                0xff000000),
-                                                          ),
-                                                          children: [
-                                                            const TextSpan(
-                                                              text: 'We are ',
-                                                            ),
-                                                            TextSpan(
-                                                              text: 'providing',
-                                                              style:
-                                                                  SafeGoogleFont(
-                                                                'Inter',
-                                                                fontSize:
-                                                                    55 * ffem,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w700,
-                                                                height: 1.2125 *
-                                                                    ffem /
-                                                                    fem,
-                                                                color: const Color(
-                                                                    0xfffbbc05),
-                                                              ),
-                                                            ),
-                                                            const TextSpan(
-                                                              text:
-                                                                  ' the \nbest',
-                                                            ),
-                                                            TextSpan(
-                                                              text: ' health ',
-                                                              style:
-                                                                  SafeGoogleFont(
-                                                                'Inter',
-                                                                fontSize:
-                                                                    55 * ffem,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w700,
-                                                                height: 1.2125 *
-                                                                    ffem /
-                                                                    fem,
-                                                                color: const Color(
-                                                                    0xff005473),
-                                                              ),
-                                                            ),
-                                                            const TextSpan(
-                                                              text:
-                                                                  'services  ',
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  // rectangle170aL8 (16:35)
-                                                  left: 804 * fem,
-                                                  top: 46 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 500 * fem,
-                                                      height: 500 * fem,
-                                                      child: Container(
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      320 *
-                                                                          fem),
-                                                          border: Border.all(
-                                                              color: const Color(
-                                                                  0xff005473)),
-                                                          color: const Color(
-                                                              0xff42869e),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  // image3463a (16:36)
-                                                  left: 662 * fem,
-                                                  top: 130 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 672 * fem,
-                                                      height: 456.8 * fem,
-                                                      child: Image.asset(
-                                                        'assets/page-1/images/image-34.png',
-                                                        fit: BoxFit.cover,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  // rectangle171DP6 (16:37)
-                                                  left: 75 * fem,
-                                                  top: 421 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 386 * fem,
-                                                      height: 84 * fem,
-                                                      child: Container(
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      34 * fem),
-                                                          border: Border.all(
-                                                              color: const Color(
-                                                                  0xff005473)),
-                                                          color: const Color(
-                                                              0xffffffff),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  // signuptodayj6Y (16:38)
-                                                  left: 167 * fem,
-                                                  top: 444 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 202 * fem,
-                                                      height: 39 * fem,
-                                                      child: TextButton(
-                                                        onPressed: () {
-                                                          Navigator.push(
-                                                            context,
-                                                            MaterialPageRoute(
-                                                                builder:
-                                                                    (context) =>
-                                                                        const MakeUser()),
-                                                          );
-                                                        },
-                                                        child: Text(
-                                                          'Signup today',
-                                                          style: SafeGoogleFont(
-                                                            'Inter',
-                                                            fontSize: 32 * ffem,
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            height: 1.2125 *
-                                                                ffem /
-                                                                fem,
-                                                            color: const Color(
-                                                                0xff005473),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  // alwayscaringaboutyourhealthfin (16:48)
-                                                  left: 76 * fem,
-                                                  top: 270 * fem,
-                                                  child: Align(
-                                                    child: SizedBox(
-                                                      width: 371 * fem,
-                                                      height: 88 * fem,
-                                                      child: Text(
-                                                        'Always caring about your health,\nFind your doctors and make an \nappointment',
-                                                        style: SafeGoogleFont(
-                                                          'Inter',
-                                                          fontSize: 24 * ffem,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          height: 1.2125 *
-                                                              ffem /
-                                                              fem,
-                                                          color: const Color(
-                                                              0xff1b3033),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ],
+                                  },
+                                  autoPlayInterval: 3000,
+                                  isLoop: true,
+                                  children: [
+                                    Image(image: NetworkImage('https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                                    fit: BoxFit.cover,
                                     ),
-                                  ),
+                                    Image(image: NetworkImage('https://images.pexels.com/photos/3259629/pexels-photo-3259629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    Image(image: NetworkImage('https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
                                 ),
+                                // Expanded(
+                                //   child: Container(
+                                //     // autogroup977vf2p (3Yb4ejm91xVKXk544z977V)
+                                //     width: double.infinity,
+                                //     height: 586.8 * fem,
+                                //     child: Stack(
+                                //       children: [
+                                //         Positioned(
+                                //           // vectorD4L (16:32)
+                                //           left: 1375 * fem,
+                                //           top: 130 * fem,
+                                //           child: Align(
+                                //             child: SizedBox(
+                                //               width: 22.8 * fem,
+                                //               height: 40 * fem,
+                                //               child: Image.asset(
+                                //                 'assets/page-1/images/vector-Ho6.png',
+                                //                 width: 22.8 * fem,
+                                //                 height: 40 * fem,
+                                //               ),
+                                //             ),
+                                //           ),
+                                //         ),
+                                //         Positioned(
+                                //           // group2428Xap (21:196)
+                                //           left: 0 * fem,
+                                //           top: 0 * fem,
+                                //           child: Container(
+                                //             width: 1440 * fem,
+                                //             height: 586.8 * fem,
+                                //             child: Stack(
+                                //               children: [
+                                //                 Positioned(
+                                //                   // rectangle173evL (16:21)
+                                //                   left: 0 * fem,
+                                //                   top: 0 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 1440 * fem,
+                                //                       height: 586 * fem,
+                                //                       child: Container(
+                                //                         decoration:
+                                //                             const BoxDecoration(
+                                //                           color:
+                                //                               Color(0xffecf9fb),
+                                //                         ),
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //                 Positioned(
+                                //                   // weareprovidingthebesthealthser (16:22)
+                                //                   left: 68 * fem,
+                                //                   top: 118 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 569 * fem,
+                                //                       height: 134 * fem,
+                                //                       child: RichText(
+                                //                         text: TextSpan(
+                                //                           style: SafeGoogleFont(
+                                //                             'Inter',
+                                //                             fontSize: 55 * ffem,
+                                //                             fontWeight:
+                                //                                 FontWeight.w700,
+                                //                             height: 1.2125 *
+                                //                                 ffem /
+                                //                                 fem,
+                                //                             color: const Color(
+                                //                                 0xff000000),
+                                //                           ),
+                                //                           children: [
+                                //                             const TextSpan(
+                                //                               text: 'We are ',
+                                //                             ),
+                                //                             TextSpan(
+                                //                               text: 'providing',
+                                //                               style:
+                                //                                   SafeGoogleFont(
+                                //                                 'Inter',
+                                //                                 fontSize:
+                                //                                     55 * ffem,
+                                //                                 fontWeight:
+                                //                                     FontWeight
+                                //                                         .w700,
+                                //                                 height: 1.2125 *
+                                //                                     ffem /
+                                //                                     fem,
+                                //                                 color: const Color(
+                                //                                     0xfffbbc05),
+                                //                               ),
+                                //                             ),
+                                //                             const TextSpan(
+                                //                               text:
+                                //                                   ' the \nbest',
+                                //                             ),
+                                //                             TextSpan(
+                                //                               text: ' health ',
+                                //                               style:
+                                //                                   SafeGoogleFont(
+                                //                                 'Inter',
+                                //                                 fontSize:
+                                //                                     55 * ffem,
+                                //                                 fontWeight:
+                                //                                     FontWeight
+                                //                                         .w700,
+                                //                                 height: 1.2125 *
+                                //                                     ffem /
+                                //                                     fem,
+                                //                                 color: const Color(
+                                //                                     0xff005473),
+                                //                               ),
+                                //                             ),
+                                //                             const TextSpan(
+                                //                               text:
+                                //                                   'services  ',
+                                //                             ),
+                                //                           ],
+                                //                         ),
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //                 Positioned(
+                                //                   // rectangle170aL8 (16:35)
+                                //                   left: 804 * fem,
+                                //                   top: 46 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 500 * fem,
+                                //                       height: 500 * fem,
+                                //                       child: Container(
+                                //                         decoration:
+                                //                             BoxDecoration(
+                                //                           borderRadius:
+                                //                               BorderRadius
+                                //                                   .circular(
+                                //                                       320 *
+                                //                                           fem),
+                                //                           border: Border.all(
+                                //                               color: const Color(
+                                //                                   0xff005473)),
+                                //                           color: const Color(
+                                //                               0xff42869e),
+                                //                         ),
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //                 Positioned(
+                                //                   // image3463a (16:36)
+                                //                   left: 662 * fem,
+                                //                   top: 130 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 672 * fem,
+                                //                       height: 456.8 * fem,
+                                //                       child: Image.asset(
+                                //                         'assets/page-1/images/image-34.png',
+                                //                         fit: BoxFit.cover,
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //                 Positioned(
+                                //                   // rectangle171DP6 (16:37)
+                                //                   left: 75 * fem,
+                                //                   top: 421 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 386 * fem,
+                                //                       height: 84 * fem,
+                                //                       child: Container(
+                                //                         decoration:
+                                //                             BoxDecoration(
+                                //                           borderRadius:
+                                //                               BorderRadius
+                                //                                   .circular(
+                                //                                       34 * fem),
+                                //                           border: Border.all(
+                                //                               color: const Color(
+                                //                                   0xff005473)),
+                                //                           color: const Color(
+                                //                               0xffffffff),
+                                //                         ),
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //                 Positioned(
+                                //                   // signuptodayj6Y (16:38)
+                                //                   left: 167 * fem,
+                                //                   top: 444 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 202 * fem,
+                                //                       height: 39 * fem,
+                                //                       child: TextButton(
+                                //                         onPressed: () {
+                                //                           Navigator.push(
+                                //                             context,
+                                //                             MaterialPageRoute(
+                                //                                 builder:
+                                //                                     (context) =>
+                                //                                         const MakeUser()),
+                                //                           );
+                                //                         },
+                                //                         child: Text(
+                                //                           'Signup today',
+                                //                           style: SafeGoogleFont(
+                                //                             'Inter',
+                                //                             fontSize: 32 * ffem,
+                                //                             fontWeight:
+                                //                                 FontWeight.w500,
+                                //                             height: 1.2125 *
+                                //                                 ffem /
+                                //                                 fem,
+                                //                             color: const Color(
+                                //                                 0xff005473),
+                                //                           ),
+                                //                         ),
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //                 Positioned(
+                                //                   // alwayscaringaboutyourhealthfin (16:48)
+                                //                   left: 76 * fem,
+                                //                   top: 270 * fem,
+                                //                   child: Align(
+                                //                     child: SizedBox(
+                                //                       width: 371 * fem,
+                                //                       height: 88 * fem,
+                                //                       child: Text(
+                                //                         'Always caring about your health,\nFind your doctors and make an \nappointment',
+                                //                         style: SafeGoogleFont(
+                                //                           'Inter',
+                                //                           fontSize: 24 * ffem,
+                                //                           fontWeight:
+                                //                               FontWeight.w400,
+                                //                           height: 1.2125 *
+                                //                               ffem /
+                                //                               fem,
+                                //                           color: const Color(
+                                //                               0xff1b3033),
+                                //                         ),
+                                //                       ),
+                                //                     ),
+                                //                   ),
+                                //                 ),
+                                //               ],
+                                //             ),
+                                //           ),
+                                //         ),
+                                //       ],
+                                //     ),
+                                //   ),
+                                // ),
                                 Container(
                                   // autogroupdfq3K4k (3Yb5iYKVaSyqn5U94idFQ3)
                                   padding: EdgeInsets.fromLTRB(687 * fem,
