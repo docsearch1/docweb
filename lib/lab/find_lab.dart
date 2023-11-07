@@ -17,7 +17,7 @@ class _SearchLabState extends State<SearchLab> {
   @override
   Widget build(BuildContext context) {
     TextEditingController locController = TextEditingController();
-    double baseWidth = 1440;
+    double baseWidth = 1020;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return SingleChildScrollView(
@@ -28,57 +28,56 @@ class _SearchLabState extends State<SearchLab> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(30),
-              child: Container(
-                margin:
-                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 217 * fem),
-                width: double.infinity,
-                height: 168 * fem,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Color(0xffe1d8d8)),
-                  borderRadius: BorderRadius.circular(40 * fem),
-                 color: Colors.pink.shade50,
-                ),
-                child: Center(
-                  child: Text(
-                    'Find Lab in India ',
-                    textAlign: TextAlign.center,
-                    style: SafeGoogleFont(
-                      'Roboto',
-                      fontSize: 60 * ffem,
-                      fontWeight: FontWeight.w600,
-                      height: 1.1725 * ffem / fem,
-                      color: Colors.pink.shade900,
-                    ),
+            Container(
+              margin:
+                  EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 217 * fem),
+              width: double.infinity,
+              height:  168 * fem,
+              decoration: BoxDecoration(
+                border: Border.all(color: Color(0xffe1d8d8)),
+                borderRadius: BorderRadius.circular(40 * fem),
+               color: Colors.pink.shade50,
+              ),
+              child: Center(
+                child: Text(
+                  'Find Lab in India ',
+                  textAlign: TextAlign.center,
+                  style: SafeGoogleFont(
+                    'Roboto',
+                    fontSize: 60 * ffem,
+                    fontWeight: FontWeight.w600,
+                    height: 1.1725 * ffem / fem,
+                    color: Colors.pink.shade900,
                   ),
                 ),
               ),
             ),
+SizedBox(
+  height: 0,
+),
+            Padding(
+              padding: EdgeInsets.only(top: 0),
+              child: ImageSlideshow(
+                height: 1000,
+                indicatorColor: Colors.blue,
+                onPageChanged: (value){
+                  debugPrint('PageChanged:$Value');
 
-            SizedBox(
-              height: 10,
-            ),
-            ImageSlideshow(
-              height: 1000,
-              indicatorColor: Colors.blue,
-              onPageChanged: (value){
-                debugPrint('PageChanged:$Value');
-
-              },
-              autoPlayInterval: 3000,
-              isLoop: true,
-              children: [
-                Image(image: NetworkImage('https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-                  fit: BoxFit.cover,
-                ),
-                Image(image: NetworkImage('https://images.pexels.com/photos/3259629/pexels-photo-3259629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-                  fit: BoxFit.cover,
-                ),
-                Image(image: NetworkImage('https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
-                  fit: BoxFit.cover,
-                ),
-              ],
+                },
+                autoPlayInterval: 3000,
+                isLoop: true,
+                children: [
+                  Image(image: NetworkImage('https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                    fit: BoxFit.cover,
+                  ),
+                  Image(image: NetworkImage('https://images.pexels.com/photos/3259629/pexels-photo-3259629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                    fit: BoxFit.cover,
+                  ),
+                  Image(image: NetworkImage('https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+                    fit: BoxFit.cover,
+                  ),
+                ],
+              ),
             ),
             SizedBox(
               height: 50,

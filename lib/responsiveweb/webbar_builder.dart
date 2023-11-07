@@ -46,6 +46,38 @@ class SlidingWebPage extends StatelessWidget {
         },
       );
     }
+    void showCustomAlertDialog(BuildContext context) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Container(
+              width: double.infinity, // Set width to occupy the entire AlertDialog
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/background_image.jpg'), // Replace with your image asset path
+                  fit: BoxFit.cover, // You can adjust the fit as needed
+                ),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  // Add your content here, such as text, buttons, or other widgets
+                  Text('Custom AlertDialog with Background Image'),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pop(); // Close the dialog
+                    },
+                    child: Text('Close'),
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      );
+    }
+
 
     return Scaffold(
       body: Column(
@@ -282,7 +314,7 @@ class SlidingWebPage extends StatelessWidget {
                                         ),
                                         child: const Text('Get Otp'),
                                         onPressed: () {
-                            
+
                                         },
                                       ),
                                     ),
@@ -292,7 +324,7 @@ class SlidingWebPage extends StatelessWidget {
                                 child: SizedBox(
                                   width: 500,
                                   child: ElevatedButton(
-                            
+
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.red, // Background color
                                        // Text color
@@ -395,19 +427,26 @@ class SlidingWebPage extends StatelessWidget {
                                 Padding(
                                   padding: const EdgeInsets.all(8),
                                   child: ElevatedButton(
-                                    child: Text('Get Otp'),
+                                    child: Text('GET Otp'),
                                     onPressed: (){},
                                   ),
                                 ),
                                 Padding(
                                 padding: const EdgeInsets.all(8),
-                                child: ElevatedButton(
-                                child: const Text('Submitß'),
-                                onPressed: () {
-                                if (_formKey.currentState!.validate()) {
-                                _formKey.currentState!.save();
-                                }
-                                },
+                                child: SizedBox(
+                                  width: 200,
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: Colors.red, // Background color
+                                      // Text color
+                                    ),
+                                  child: const Text('Submit'),
+                                  onPressed: () {
+                                  if (_formKey.currentState!.validate()) {
+                                  _formKey.currentState!.save();
+                                  }
+                                  },
+                                  ),
                                 ),
                                 )
                                 ],
